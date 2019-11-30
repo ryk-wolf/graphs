@@ -1,7 +1,8 @@
+/*Author Alex Vigneron*/
+
 #include "graphe.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "my_library.h"
 
 
 /*********************************MACROS***************************************/
@@ -93,8 +94,7 @@ void calculate_path(tGraphe g, tNomSommet start_node, tNomSommet end_node){
 
 /*Prints to standard output the path from beginning node to end node*/
 void display_path(tGraphe g, tNomSommet beginning, tNomSommet end){
-  int i, nb_nodes;
-  tNumeroSommet curr_node_index;
+  int i;
   tNomSommet curr_node_name;
 
   /*First node*/
@@ -103,7 +103,6 @@ void display_path(tGraphe g, tNomSommet beginning, tNomSommet end){
   /*All nodes in the path*/
   for (i = 0; i < MAX_SOMMETS; i++) {
     if(best_path[i] != EMPTY){ /*If it's part of the best path and not just empty*/
-    curr_node_index = best_path[i];
     grapheRecupNomSommet(g, best_path[i], curr_node_name);
     printf("%s\n", curr_node_name);
   }
