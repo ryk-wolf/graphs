@@ -9,7 +9,7 @@ TARGET = path_in_maze naive_dijkstra
 
 all: $(TARGET)
 
-path_in_maze: path_in_maze.o graphe.o
+path_in_maze: DFS_path_in_maze.o graphe.o
 	$(CC) -o $@ $^
 
 naive_dijkstra: naive_dijkstra.o graphe.o
