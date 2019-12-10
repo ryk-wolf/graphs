@@ -15,7 +15,7 @@ path_in_maze: DFS_path_in_maze.o graphe.o
 naive_dijkstra: naive_dijkstra.o graphe.o
 	$(CC) -o $@ $^
 
-max_valued_path: max_valued_path.o graphe.o
+naive_max_valued_path: naive_max_valued_path.o graphe.o
 	$(CC) -o $@ $^
 
 
