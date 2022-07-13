@@ -1,4 +1,4 @@
-# Author Alex Vigneron
+# Author Richard A. Wolf
 
 CC = gcc	#compiler
 CFLAGS = -W -Wall -Wextra -std=c99 -pedantic -g -Wno-unused-parameter
