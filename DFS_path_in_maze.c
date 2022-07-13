@@ -1,4 +1,4 @@
-/*Author Alex Vigneron*/
+/*Author Richard A. Wolf*/
 
 #include "graphe.h"
 #include <stdio.h>
